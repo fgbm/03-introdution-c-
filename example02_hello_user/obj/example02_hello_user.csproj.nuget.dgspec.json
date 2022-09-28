@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\neimp\\Projects\\GeekBrains\\03-introdution-c-sharp\\example02_hello_user\\example02_hello_user.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\neimp\\Projects\\GeekBrains\\03-introdution-c-sharp\\example02_hello_user\\example02_hello_user.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\neimp\\Projects\\GeekBrains\\03-introdution-c-sharp\\example02_hello_user\\example02_hello_user.csproj",
+        "projectName": "example02_hello_user",
+        "projectPath": "C:\\Users\\neimp\\Projects\\GeekBrains\\03-introdution-c-sharp\\example02_hello_user\\example02_hello_user.csproj",
+        "packagesPath": "C:\\Users\\neimp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\neimp\\Projects\\GeekBrains\\03-introdution-c-sharp\\example02_hello_user\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\neimp\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
