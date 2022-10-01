@@ -16,16 +16,10 @@ int ReadInt()
     return result;
 }
 
-int? number1;
-int? number2;
-int? number3;
-int? max;
-
-number1 = ReadInt();
-number2 = ReadInt();
-number3 = ReadInt();
-
-max = number1;
+int number1 = ReadInt();
+int number2 = ReadInt();
+int number3 = ReadInt();
+int max = number1;
 
 if (number2 > max) max = number2;
 if (number3 > max) max = number3;
