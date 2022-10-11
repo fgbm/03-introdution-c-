@@ -13,33 +13,31 @@ Console.Write("Введите трёхзначное число: ");
 string? inputString = Console.ReadLine();
 int inputNumber;
 
-// Пробуем привести введённую строку к числу
 try
 {
+    #pragma warning disable CS8604
     inputNumber = int.Parse(inputString);
-}
-catch (ArgumentNullException)
-{
-    Console.WriteLine("Ничего не ввели 🤦‍♂️");
-    throw;
+
+    if (inputString.Length < 3)
+    {
+        Console.WriteLine("Третьей цифры нет");
+    }
+    else
+    {
+        if (inputString.Length == 3) Console.WriteLine($"Третья цифра числа: {inputNumber % 10}");
+        else
+        {
+            int times = inputString.Length - 3;
+            int denominator = (int)Math.Pow(10, times);
+            Console.WriteLine($"Третья цифра числа: {(inputNumber / denominator) % 10}");
+        }
+    }
 }
 catch (FormatException)
 {
     Console.WriteLine("Введённый текст не является целым числом");
-    throw;
 }
 catch (OverflowException)
 {
     Console.WriteLine("Слишком большое целое число");
-    throw;
-}
-
-if (inputString.Length < 3)
-{
-    Console.WriteLine("Третьей цифры нет");
-}
-else
-{
-    if (inputString.Length == 3) Console.WriteLine($"Третья цифра числа: {inputNumber / 100}");
-    else Console.WriteLine($"Третья цифра числа: {(inputNumber % 1000) / 100}");
 }
