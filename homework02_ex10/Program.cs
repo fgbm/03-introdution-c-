@@ -10,6 +10,16 @@
 */
 
 Console.Write("Введите трёхзначное число: ");
-int inputNumber = int.Parse(Console.ReadLine());
+string? inputString = Console.ReadLine();
+int inputNumber;
 
-Console.WriteLine($"Вторая цифра числа: {(inputNumber % 100) / 10}");
+inputNumber = int.Parse(inputString);
+
+if (inputString.Length == 3)
+{
+    Console.WriteLine($"Вторая цифра числа: {(inputNumber % 100) / 10}");
+}
+else
+{
+    Console.WriteLine("Введённое число не является трёхзначным");
+}
