@@ -13,8 +13,9 @@ void WriteArray(int[] array)
     }
     for (int i = 0; i < array.Length; i++)
     {
-        if (i + 1 != array.Length) Console.Write($"{array[i]}, ");
-        else Console.WriteLine(array[i]);
+        if (i == 0) Console.Write($"[{array[i]}, ");
+        if (i + 1 == array.Length) Console.WriteLine($"{array[i]}]");
+        else Console.Write($"{array[i]}, ");
     }
 }
 
