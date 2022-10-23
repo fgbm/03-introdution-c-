@@ -31,13 +31,10 @@ void WriteMatrix(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        Console.Write("|");
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
             string element = matrix[i, j].ToString();
-            // Подгоняем пробелами ширину элемента массива под ширину колонки
-            for (int c = 0; c <= (COLUMN_WIDTH - element.Length); c++) element = " " + element;
-            Console.Write(element + "|");
+            Console.Write($"{element,COLUMN_WIDTH:0.###}");
         }
         Console.WriteLine();
     }
